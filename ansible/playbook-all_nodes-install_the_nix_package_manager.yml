@@ -1,0 +1,8 @@
+---
+- name: 'Install the nix package manager'
+  hosts: 'all'
+  gather_facts: true
+  become: true
+
+  roles:
+    - role: 'johanneskastl.install_the_nix_package_manager'
